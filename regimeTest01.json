@@ -1,0 +1,16 @@
+{
+"input": "productCategory: ;skinType: ;targetConcerns: ;ingredients: ;texture: ;spf: ;brand: ;description: ;title: ;usageInstructions:",
+"output": ""
+}
+Testing data set
+
+  {
+      "input": "productCategory: Cleanser; skinType: Sensitive; targetConcerns: Redness; ingredients: Chamomile, Aloe Vera; texture: Gel; spf: 0; brand: PureEssence; description: Soothing gel cleanser for sensitive skin; title: Calming Gel Cleanser; usageInstructions: Use morning and night.",
+      "output": "1. Wet face with lukewarm water. 2. Apply Calming Gel Cleanser and massage gently. 3. Rinse thoroughly. 4. Follow with toner and moisturizer."
+  }
+  {
+      "input": "productCategory: Moisturizer; skinType: Combination; targetConcerns: Oil Control; ingredients: Green Tea, Niacinamide; texture: Lotion; spf: 30; brand: AquaVita; description: Lightweight lotion for oil control; title: Oil-Free Moisturizing Lotion; usageInstructions: Apply daily after cleansing.",
+      "output": "1. Cleanse face with a gentle cleanser. 2. Apply toner. 3. Use serum if needed. 4. Apply Oil-Free Moisturizing Lotion evenly over face. 5. Follow with sunscreen if needed."
+  }
+
+
