@@ -4,13 +4,17 @@
 }
 Testing data set
 
-  {
-      "input": "productCategory: Cleanser; skinType: Sensitive; targetConcerns: Redness; ingredients: Chamomile, Aloe Vera; texture: Gel; spf: 0; brand: PureEssence; description: Soothing gel cleanser for sensitive skin; title: Calming Gel Cleanser; usageInstructions: Use morning and night.",
-      "output": "1. Wet face with lukewarm water. 2. Apply Calming Gel Cleanser and massage gently. 3. Rinse thoroughly. 4. Follow with toner and moisturizer."
-  }
-  {
-      "input": "productCategory: Moisturizer; skinType: Combination; targetConcerns: Oil Control; ingredients: Green Tea, Niacinamide; texture: Lotion; spf: 30; brand: AquaVita; description: Lightweight lotion for oil control; title: Oil-Free Moisturizing Lotion; usageInstructions: Apply daily after cleansing.",
-      "output": "1. Cleanse face with a gentle cleanser. 2. Apply toner. 3. Use serum if needed. 4. Apply Oil-Free Moisturizing Lotion evenly over face. 5. Follow with sunscreen if needed."
+{
+    "train": [
+      {
+        "input": "Create a step-by-step skincare routine based on the following product information:\n\n- **Product Category**: Cleanser\n- **Skin Type**: Sensitive\n- **Target Concerns**: Redness\n- **Ingredients**: Chamomile, Aloe Vera\n- **Texture**: Gel\n- **SPF**: 0\n- **Brand**: PureEssence\n- **Description**: Soothing gel cleanser for sensitive skin\n- **Title**: Calming Gel Cleanser\n- **Usage Instructions**: Use morning and night.\n\nPlease ensure the routine is suitable for sensitive skin and addresses redness concerns.",
+        "output": "1. Wet face with lukewarm water.\n2. Apply Calming Gel Cleanser and massage gently.\n3. Rinse thoroughly.\n4. Follow with toner and moisturizer."
+      },
+      {
+        "input": "Create a step-by-step skincare routine based on the following product information:\n\n- **Product Category**: Moisturizer\n- **Skin Type**: Combination\n- **Target Concerns**: Oil Control\n- **Ingredients**: Green Tea, Niacinamide\n- **Texture**: Lotion\n- **SPF**: 30\n- **Brand**: AquaVita\n- **Description**: Lightweight lotion for oil control\n- **Title**: Oil-Free Moisturizing Lotion\n- **Usage Instructions**: Apply daily after cleansing.\n\nPlease ensure the routine is suitable for combination skin and addresses oil control concerns.",
+        "output": "1. Cleanse face with a gentle cleanser.\n2. Apply toner.\n3. Use serum if needed.\n4. Apply Oil-Free Moisturizing Lotion evenly over face.\n5. Follow with sunscreen if needed."
+      }
+    ]
   }
 
 

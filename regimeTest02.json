@@ -1,40 +1,44 @@
-  {
-      "input": "productCategory: Moisturizer; skinType: Oily; targetConcerns: Hydration; ingredients: Water, Glycerin, Hyaluronic Acid; texture: Gel; spf: 15; brand: LuxeGlow; description: Lightweight gel moisturizer; title: Hydrating Gel Moisturizer; usageInstructions: Apply to face after cleansing and toning.",
-      "output": "1. Cleanse face with a gentle cleanser. 2. Apply toner. 3. Use serum if needed. 4. Apply the Hydrating Gel Moisturizer evenly over the face. 5. Follow with sunscreen in the morning."
-  }
-  {
-      "input": "productCategory: Serum; skinType: Dry; targetConcerns: Anti-aging; ingredients: Retinol, Vitamin C, Hyaluronic Acid; texture: Liquid; spf: 0; brand: PureEssence; description: Anti-aging serum with retinol; title: Retinol Anti-Aging Serum; usageInstructions: Use at night after cleansing.",
-      "output": "1. Cleanse face thoroughly. 2. Apply toner. 3. Dispense a few drops of Retinol Anti-Aging Serum and pat into skin. 4. Follow with a moisturizer. 5. Use sunscreen during the day."
-  }
-  {
-      "input": "productCategory: Cleanser; skinType: Combination; targetConcerns: Pore Minimizing; ingredients: Salicylic Acid, Tea Tree Oil; texture: Foam; spf: 0; brand: AquaVita; description: Deep cleansing foam for pores; title: Pore Minimizing Cleanser; usageInstructions: Use twice daily.",
-      "output": "1. Wet face with lukewarm water. 2. Apply Pore Minimizing Cleanser and massage gently. 3. Rinse thoroughly. 4. Follow with toner and moisturizer."
-  }
-  {
-      "input": "productCategory: Sunscreen; skinType: All; targetConcerns: Sun Protection; ingredients: Zinc Oxide, Titanium Dioxide; texture: Cream; spf: 50; brand: PureEssence; description: Broad-spectrum mineral sunscreen; title: Mineral Sunscreen SPF 50; usageInstructions: Apply generously before sun exposure.",
-      "output": "1. Cleanse and moisturize face. 2. Apply Mineral Sunscreen SPF 50 generously 15 minutes before sun exposure. 3. Reapply every two hours or after swimming or sweating."
-  }
-  {
-      "input": "productCategory: Eye Cream; skinType: Sensitive; targetConcerns: Dark Circles; ingredients: Caffeine, Vitamin K; texture: Cream; spf: 0; brand: AquaVita; description: Brightening eye cream for dark circles; title: Dark Circle Eye Cream; usageInstructions: Use morning and night.",
-      "output": "1. Cleanse face and apply toner. 2. Use ring finger to gently pat Dark Circle Eye Cream around the eye area. 3. Follow with moisturizer and sunscreen in the morning."
-  }
-    {
-      "input": "productCategory: Toner; skinType: Normal; targetConcerns: Brightening; ingredients: Niacinamide, Licorice Extract; texture: Liquid; spf: 0; brand: Celestial Care; description: Brightening toner for even skin tone; title: Radiance Boosting Toner; usageInstructions: Apply after cleansing.",
-      "output": "1. Cleanse face with a gentle cleanser. 2. Apply Radiance Boosting Toner using a cotton pad or hands. 3. Follow with serum and moisturizer."
-  }
-  {
-      "input": "productCategory: Face Mask; skinType: Dry; targetConcerns: Hydration; ingredients: Aloe Vera, Shea Butter; texture: Cream; spf: 0; brand: Celestial Care; description: Hydrating face mask for dry skin; title: Deep Moisture Face Mask; usageInstructions: Use 2-3 times a week.",
-      "output": "1. Cleanse face thoroughly. 2. Apply a generous layer of Deep Moisture Face Mask. 3. Leave on for 15-20 minutes. 4. Rinse off with lukewarm water. 5. Follow with toner and moisturizer."
-  }
-  {
-      "input": "productCategory: Exfoliator; skinType: Oily; targetConcerns: Blackheads; ingredients: Salicylic Acid, Charcoal; texture: Scrub; spf: 0; brand: Celestial Care; description: Exfoliating scrub for blackhead removal; title: Charcoal Exfoliating Scrub; usageInstructions: Use twice a week.",
-      "output": "1. Wet face with warm water. 2. Apply Charcoal Exfoliating Scrub and massage gently in circular motions. 3. Rinse thoroughly. 4. Follow with toner and moisturizer."
-  }
-  {
-      "input": "productCategory: Night Cream; skinType: Mature; targetConcerns: Firming; ingredients: Peptides, Collagen; texture: Cream; spf: 0; brand: LuxeGlow; description: Firming night cream for mature skin; title: Firming Night Cream; usageInstructions: Apply nightly before bed.",
-      "output": "1. Cleanse face and apply toner. 2. Use serum if desired. 3. Apply Firming Night Cream evenly over face and neck. 4. Avoid eye area."
-  }
-  {
-      "input": "productCategory: Lip Balm; skinType: All; targetConcerns: Chapped Lips; ingredients: Beeswax, Vitamin E; texture: Balm; spf: 15; brand: LuxeGlow; description: Nourishing lip balm with SPF; title: SPF Lip Balm; usageInstructions: Apply as needed.",
-      "output": "1. Apply SPF Lip Balm to lips as needed throughout the day. 2. Reapply after eating or drinking. 3. Use before sun exposure for protection."
+{
+    "train": [
+      {
+        "input": "Create a step-by-step skincare routine based on the following product information:\n\n- **Product Category**: Moisturizer\n- **Skin Type**: Oily\n- **Target Concerns**: Hydration\n- **Ingredients**: Water, Glycerin, Hyaluronic Acid\n- **Texture**: Gel\n- **SPF**: 15\n- **Brand**: LuxeGlow\n- **Description**: Lightweight gel moisturizer\n- **Title**: Hydrating Gel Moisturizer\n- **Usage Instructions**: Apply to face after cleansing and toning.\n\nPlease ensure the routine is suitable for oily skin and addresses hydration concerns.",
+        "output": "1. Cleanse face with a gentle cleanser.\n2. Apply toner.\n3. Use serum if needed.\n4. Apply the Hydrating Gel Moisturizer evenly over the face.\n5. Follow with sunscreen in the morning."
+      },
+      {
+        "input": "Create a step-by-step skincare routine based on the following product information:\n\n- **Product Category**: Serum\n- **Skin Type**: Dry\n- **Target Concerns**: Anti-aging\n- **Ingredients**: Retinol, Vitamin C, Hyaluronic Acid\n- **Texture**: Liquid\n- **SPF**: 0\n- **Brand**: PureEssence\n- **Description**: Anti-aging serum with retinol\n- **Title**: Retinol Anti-Aging Serum\n- **Usage Instructions**: Use at night after cleansing.\n\nPlease ensure the routine is suitable for dry skin and addresses anti-aging concerns.",
+        "output": "1. Cleanse face thoroughly.\n2. Apply toner.\n3. Dispense a few drops of Retinol Anti-Aging Serum and pat into skin.\n4. Follow with a moisturizer.\n5. Use sunscreen during the day."
+      },
+      {
+        "input": "Create a step-by-step skincare routine based on the following product information:\n\n- **Product Category**: Cleanser\n- **Skin Type**: Combination\n- **Target Concerns**: Pore Minimizing\n- **Ingredients**: Salicylic Acid, Tea Tree Oil\n- **Texture**: Foam\n- **SPF**: 0\n- **Brand**: AquaVita\n- **Description**: Deep cleansing foam for pores\n- **Title**: Pore Minimizing Cleanser\n- **Usage Instructions**: Use twice daily.\n\nPlease ensure the routine is suitable for combination skin and addresses pore concerns.",
+        "output": "1. Wet face with lukewarm water.\n2. Apply Pore Minimizing Cleanser and massage gently.\n3. Rinse thoroughly.\n4. Follow with toner and moisturizer."
+      },
+      {
+        "input": "Create a step-by-step skincare routine based on the following product information:\n\n- **Product Category**: Sunscreen\n- **Skin Type**: All\n- **Target Concerns**: Sun Protection\n- **Ingredients**: Zinc Oxide, Titanium Dioxide\n- **Texture**: Cream\n- **SPF**: 50\n- **Brand**: PureEssence\n- **Description**: Broad-spectrum mineral sunscreen\n- **Title**: Mineral Sunscreen SPF 50\n- **Usage Instructions**: Apply generously before sun exposure.\n\nPlease ensure the routine is suitable for all skin types and provides effective sun protection.",
+        "output": "1. Cleanse and moisturize face.\n2. Apply Mineral Sunscreen SPF 50 generously 15 minutes before sun exposure.\n3. Reapply every two hours or after swimming or sweating."
+      },
+      {
+        "input": "Create a step-by-step skincare routine based on the following product information:\n\n- **Product Category**: Eye Cream\n- **Skin Type**: Sensitive\n- **Target Concerns**: Dark Circles\n- **Ingredients**: Caffeine, Vitamin K\n- **Texture**: Cream\n- **SPF**: 0\n- **Brand**: AquaVita\n- **Description**: Brightening eye cream for dark circles\n- **Title**: Dark Circle Eye Cream\n- **Usage Instructions**: Use morning and night.\n\nPlease ensure the routine is suitable for sensitive skin and addresses dark circles.",
+        "output": "1. Cleanse face and apply toner.\n2. Use ring finger to gently pat Dark Circle Eye Cream around the eye area.\n3. Follow with moisturizer and sunscreen in the morning."
+      },
+      {
+        "input": "Create a step-by-step skincare routine based on the following product information:\n\n- **Product Category**: Toner\n- **Skin Type**: Normal\n- **Target Concerns**: Brightening\n- **Ingredients**: Niacinamide, Licorice Extract\n- **Texture**: Liquid\n- **SPF**: 0\n- **Brand**: Celestial Care\n- **Description**: Brightening toner for even skin tone\n- **Title**: Radiance Boosting Toner\n- **Usage Instructions**: Apply after cleansing.\n\nPlease ensure the routine is suitable for normal skin and addresses brightening concerns.",
+        "output": "1. Cleanse face with a gentle cleanser.\n2. Apply Radiance Boosting Toner using a cotton pad or hands.\n3. Follow with serum and moisturizer."
+      },
+      {
+        "input": "Create a step-by-step skincare routine based on the following product information:\n\n- **Product Category**: Face Mask\n- **Skin Type**: Dry\n- **Target Concerns**: Hydration\n- **Ingredients**: Aloe Vera, Shea Butter\n- **Texture**: Cream\n- **SPF**: 0\n- **Brand**: Celestial Care\n- **Description**: Hydrating face mask for dry skin\n- **Title**: Deep Moisture Face Mask\n- **Usage Instructions**: Use 2-3 times a week.\n\nPlease ensure the routine is suitable for dry skin and addresses hydration concerns.",
+        "output": "1. Cleanse face thoroughly.\n2. Apply a generous layer of Deep Moisture Face Mask.\n3. Leave on for 15-20 minutes.\n4. Rinse off with lukewarm water.\n5. Follow with toner and moisturizer."
+      },
+      {
+        "input": "Create a step-by-step skincare routine based on the following product information:\n\n- **Product Category**: Exfoliator\n- **Skin Type**: Oily\n- **Target Concerns**: Blackheads\n- **Ingredients**: Salicylic Acid, Charcoal\n- **Texture**: Scrub\n- **SPF**: 0\n- **Brand**: Celestial Care\n- **Description**: Exfoliating scrub for blackhead removal\n- **Title**: Charcoal Exfoliating Scrub\n- **Usage Instructions**: Use twice a week.\n\nPlease ensure the routine is suitable for oily skin and addresses blackhead concerns.",
+        "output": "1. Wet face with warm water.\n2. Apply Charcoal Exfoliating Scrub and massage gently in circular motions.\n3. Rinse thoroughly.\n4. Follow with toner and moisturizer."
+      },
+      {
+        "input": "Create a step-by-step skincare routine based on the following product information:\n\n- **Product Category**: Night Cream\n- **Skin Type**: Mature\n- **Target Concerns**: Firming\n- **Ingredients**: Peptides, Collagen\n- **Texture**: Cream\n- **SPF**: 0\n- **Brand**: LuxeGlow\n- **Description**: Firming night cream for mature skin\n- **Title**: Firming Night Cream\n- **Usage Instructions**: Apply nightly before bed.\n\nPlease ensure the routine is suitable for mature skin and addresses firming concerns.",
+        "output": "1. Cleanse face and apply toner.\n2. Use serum if desired.\n3. Apply Firming Night Cream evenly over face and neck.\n4. Avoid eye area."
+      },
+      {
+        "input": "Create a step-by-step skincare routine based on the following product information:\n\n- **Product Category**: Lip Balm\n- **Skin Type**: All\n- **Target Concerns**: Chapped Lips\n- **Ingredients**: Beeswax, Vitamin E\n- **Texture**: Balm\n- **SPF**: 15\n- **Brand**: LuxeGlow\n- **Description**: Nourishing lip balm with SPF\n- **Title**: SPF Lip Balm\n- **Usage Instructions**: Apply as needed.\n\nPlease ensure the routine is suitable for all skin types and provides protection for chapped lips.",
+        "output": "1. Apply SPF Lip Balm to lips as needed throughout the day.\n2. Reapply after eating or drinking.\n3. Use before sun exposure for protection."
+      }
+    ]
   }
